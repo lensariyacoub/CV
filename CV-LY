@@ -1,0 +1,191 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+\geometry{left=1.5cm,right=1cm,top=1cm,bottom=1cm,columnsep=0.75cm}
+
+\usepackage{fontawesome}
+
+\usepackage{paracol}
+
+\usepackage{xcolor}
+\usepackage{paracol}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{pifont}
+\usepackage{hyperref}
+
+
+\ifxetexorluatex
+ 
+  \setmainfont{Roboto Slab}
+ % \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+ 
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+ 
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+
+\definecolor{bluey}{RGB}{7,28,133}
+\definecolor{lightgray}{RGB}{95,253,255}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{PrimaryColor}{HTML}{001F5A}
+\definecolor{SecondaryColor}{HTML}{0039AC}
+\definecolor{ThirdColor}{HTML}{F3890B}
+\definecolor{BackgroundColor}{HTML}{E2E2E2}
+\colorlet{name}{PrimaryColor}
+\colorlet{tagline}{PrimaryColor}
+\colorlet{heading}{PrimaryColor}
+\colorlet{headingrule}{black}
+\colorlet{subheading}{SecondaryColor}
+\colorlet{accent}{SecondaryColor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+%\pagecolor{BackgroundColor}   
+
+
+\usepackage{tcolorbox}  % Pour des boîtes de couleurs autour des sections
+\definecolor{loisirsColor}{HTML}{D4EFDF}  % Vert pastel clair
+% Définir les couleurs personnalisées
+\definecolor{experienceColor}{HTML}{F0F0F0}   % Gris clair pour l'expérience
+
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\small\bfseries}
+\renewcommand{\cvsectionfont}{\large\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\small\bfseries}
+
+% \renewcommand{\itemmarker}{{\small\textbullet}}
+%\renewcommand{\ratingmarker}{\faCircle}
+
+\usepackage{tikz}
+%\usetikzlibrary{fadings}
+\pagecolor{white}
+
+    \begin{document}
+     
+                    \begin{tcolorbox}[colback=loisirsColor, coltext=black, colframe=white, sharp corners]
+                    
+                        \name{Lensari Yaakoub}
+                                \tagline{A la recherche d'un stage de M2 pour le poste de Data Analyst / \\ Chargé d'études Statistiques et ou Économétriques }
+                                
+                                \personalinfo{
+                                    \email{lensariyacoub1997@gmail.com}\smallskip
+                                    \phone{07 53 23 05 02}
+                                    \location{Aix-en-Provence, France}\\
+                                    \linkedin{lensari}}
+                                    
+                                     \photoL{3,3cm}{cv.v}
+                                     
+                                     \makecvheader
+                    \end{tcolorbox} 
+            
+       
+                                                     \columnratio{0.30}
+    
+        \begin{paracol}{2}
+    
+              
+            
+                \cvsection{Profil}
+            
+                   \begin{tcolorbox}[colback=loisirsColor, coltext=black, colframe=white, sharp corners]
+                 
+                         \textcolor{Black}{\textbf{\textit{Étudiant en Master 1 Ingénierie des Données et Économétrie, avec une base solide en économie, je me distingue par ma passion pour l'analyse de données, ma volonté d'apprendre et ma capacité à assimiler de nouveaux concepts.}}} 
+                   \end{tcolorbox}
+                  
+                \cvsection{Compétences Techniques}
+                    \begin{tcolorbox}[colback=loisirsColor, coltext=black, colframe=white, sharp corners]
+                            \cvtag{\textbf{Power BI}}  \cvtag{\textbf{STATA}} \cvtag{\LaTeX} \cvtag{\textbf{R} (Markdown)} \cvtag{\textbf{SQL}} 
+                            \cvtag{\textbf{\faPython}}  \cvtag{\textbf{Pack Office}} \\
+    
+                    \end{tcolorbox}
+                 
+              
+                \cvsection{Langues}
+                    \begin{tcolorbox}[colback=loisirsColor, coltext=black, colframe=white, sharp corners]
+                           \cvlang{Français}{C1 (Courant)}\\
+                           \divider
+                           \cvlang{Anglais}{B2 (intermédiaire)}\\
+                           \divider
+                           \cvlang{Tamazight}{Langue maternelle}
+                    \end{tcolorbox}
+                    
+                   
+                                           \smallskip
+                
+               \cvsection{Loisirs}
+        
+                    \begin{tcolorbox}[colback=loisirsColor, coltext=black, colframe=white, sharp corners]
+                            \cvtag{Lectures} Articles sur l'actualité économique et géopolitique. \\
+                            \divider
+                            \cvtag{Sport} Pratique régulière du Judo.
+                    \end{tcolorbox}
+        
+               
+                                            \switchcolumn
+        
+        
+               
+               \cvsection{Parcours Académique}
+         
+                    \begin{tcolorbox}[colback=experienceColor, coltext=black, colframe=white, sharp corners]
+                
+                       \cvevent{\textbf{Master 1 Économétrie et Données}}{| Université d'Angers}{2023 -- 2024}{Angers, France}
+                               \begin{itemize}
+                                     \item \textbf{Mémoire} : Analyse des facteurs de risque influençant la dépression chez les personnes âgées à l'aide de modèles logistiques (outils : Tex-studio, STATA, RMarkdown)\,\href{https://www.linkedin.com/in/lensari/details/projects/}{\color{blue}[détails ici]}.
+    
+                                     \item \textbf{Projet} : Analyse des déterminants des prix des smartphones reconditionnés à l'aide de l'ACP (Analyse en Composantes Principales - RMarkdown).
+                                \end{itemize}
+                
+                        \cvevent{\textbf{Licence en Économie de l'Entreprise}}{| Université de Tours}{2020 -- 2022} 
+                                       {Tours, France}
+                                \begin{itemize}
+                                      \item \textbf{Projet} : Analyse de l'impact des énergies fossiles sur le changement climatique à travers des graphiques, tableaux et tests statistiques \,\href{https://www.linkedin.com/in/lensari/details/projects/}{\color{blue}[Ici]} .
+                                \end{itemize}
+                
+                        \cvevent{\textbf{Licence en Économie Quantitative}}{| Université de Bejaia}{2017 -- 2020} 
+                                  {Bejaia, Algérie}
+                                \begin{itemize}
+                                      \item \textbf{Mémoire} : Évaluation des projets d'investissement et analyse des différentes sources de financement et des outils d'évaluation.
+                                \end{itemize}
+                                
+                
+                    \end{tcolorbox}
+                        
+        
+        
+         
+                \cvsection{EXPÉRIENCES PROFESSIONNELLES}
+            
+                   \begin{tcolorbox}[colback=experienceColor, coltext=black, colframe=white, sharp corners]
+                       \cvevent{\textbf{Superviseur de dédouanement} }{| Transit-Boudebza}{07 2019-- 08 2019}{Bejaia, Algerie}
+                                \begin{itemize}
+                                    \item Réception ,  contrôle et préparation des dossiers clients
+                                \end{itemize}
+                
+                        \cvevent{\textbf{Délégué de section}}{|Université de     Bejaia}{2017-2019}  {Bejaia, Algerie}
+                        
+                                \begin{itemize}
+                                      \item       Rédaction des rapports sur l’état d’avancement des cours, des travaux dirigés et pratiques
+                                      \item Participation aux réunions du comité pédagogique afin de fixer des dates d’examen ou autre évènement pédagogique
+                                \end{itemize}
+                        
+                     
+                        \cvevent{\textbf{Agent polyvalent} }{|Hôtelleries et  Restauration}  {2020-2022}{Tours, France}
+                                 \begin{itemize}
+                                     \item Réception, caisse, prise et saisi des commandes clients
+                                 \end{itemize}
+                   \end{tcolorbox}
+        
+        \end{paracol}
+    
+    \end{document}
+    
